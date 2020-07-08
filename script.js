@@ -3,7 +3,7 @@ const playAgainBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
-
+const wrongLettersEl = document.getElementById('wrong-letters')
 const figureParts = document.querySelectorAll('.figure-part');
 
 const words = ['application', 'programming', 'interface', 'wizard'];
