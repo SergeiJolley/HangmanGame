@@ -5,7 +5,7 @@ const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
 const wrongLettersEl = document.getElementById('wrong-letters')
 const figureParts = document.querySelectorAll('.figure-part');
-
+const input = document.querySelector('input');
 const words = ['application', 'programming', 'interface', 'wizard'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -105,5 +105,10 @@ playAgainBtn.addEventListener('click', () => {
 
     popup.style.display = 'none';
 })
+
+
+input.addEventListener('keydown', (e) => console.log(e.key));
+input.addEventListener('keyup', () => input.value = '');
+
 
 displayword();
