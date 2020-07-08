@@ -106,7 +106,7 @@ playAgainBtn.addEventListener('click', () => {
     popup.style.display = 'none';
 })
 
-
+input.addEventListener('touchstart', (e) => input.type = "text");
 input.addEventListener('keydown', (e) => console.log(e.key));
 input.addEventListener('keyup', () => input.value = '');
 
